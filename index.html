@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valéry Rafalinjanahary — Monteur vidéo &amp; Cadreur</title>
+<meta name="description" content="Portfolio de Valéry Rafalinjanahary, monteur vidéo, cadreur et photographe freelance. Des images qui racontent votre histoire.">
+
+<!-- ============================================= -->
+<!-- FONTS -->
+<!-- ============================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700;800&family=Inter:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- BACKGROUND LAYERS (logo watermark + glows) -->
+<!-- ============================================= -->
+<div class="bg-layer" aria-hidden="true">
+  <img src="assets/images/logo.png" alt="" class="bg-logo" id="bgLogo">
+  <div class="bg-glow bg-glow--one" id="glowOne"></div>
+  <div class="bg-glow bg-glow--two" id="glowTwo"></div>
+  <div class="bg-grain"></div>
+</div>
+
+<!-- Halo bleu qui suit le curseur (désactivé sur tactile / mouvement réduit) -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============================================= -->
+<!-- NAVIGATION -->
+<!-- ============================================= -->
+<header class="nav-wrap">
+  <nav class="nav-glass" id="navGlass">
+    <a href="#accueil" class="nav-brand">
+      <img src="assets/images/logo.png" alt="Logo VR" class="nav-brand__mark">
+      <span class="nav-brand__text">Valéry<strong>RFJ</strong></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#accueil" class="nav-link">Accueil</a></li>
+      <li><a href="#a-propos" class="nav-link">À propos</a></li>
+      <li><a href="#competences" class="nav-link">Compétences</a></li>
+      <li><a href="#formation" class="nav-link">Formation</a></li>
+      <li><a href="#experience" class="nav-link">Expérience</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Me contacter</a>
+    <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#accueil" class="nav-mobile__link">Accueil</a>
+    <a href="#a-propos" class="nav-mobile__link">À propos</a>
+    <a href="#competences" class="nav-mobile__link">Compétences</a>
+    <a href="#formation" class="nav-mobile__link">Formation</a>
+    <a href="#experience" class="nav-mobile__link">Expérience</a>
+    <a href="#portfolio" class="nav-mobile__link">Portfolio</a>
+    <a href="#contact" class="nav-mobile__link">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================= -->
+  <!-- HERO -->
+  <!-- ============================================= -->
+  <section class="hero" id="accueil">
+    <div class="hero__inner">
+      <p class="hero__kicker">Monteur vidéo · Cadreur · Photographe · Créatif multimédia</p>
+
+      <h1 class="hero__name">
+        <span class="hero__first">Valéry</span>
+        <span class="hero__last">Rafalinjanahary</span>
+      </h1>
+
+      <p class="hero__tagline">« Des images qui racontent votre histoire »</p>
+
+      <p class="hero__desc">
+        Depuis 2017, je façonne des vidéos pour la télévision, les institutions et les marques —
+        du dérushage à l'étalonnage, du cadrage à la photographie. Rigoureux, polyvalent,
+        et attaché à chaque détail qui fait qu'une image raconte vraiment quelque chose.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn btn--primary">Voir mon travail</a>
+        <a href="#contact" class="btn btn--ghost">Me contacter</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num">9</span>
+          <span class="hero__stat-label">ans d'expérience</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">2017</span>
+          <span class="hero__stat-label">premiers pas en TV</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">FR / MG</span>
+          <span class="hero__stat-label">clients &amp; projets</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#a-propos" class="scroll-cue" aria-label="Défiler vers le bas">
+      <span class="scroll-cue__line"></span>
+    </a>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- À PROPOS -->
+  <!-- ============================================= -->
+  <section class="section" id="a-propos">
+    <div class="section__inner about">
+      <div class="section__head reveal">
+        <div class="section__title-row">
+          <span class="section__bar"></span>
+          <h2 class="section__title">À propos</h2>
+        </div>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__photo reveal">
+          <div class="glass-frame">
+            <img src="assets/images/profile.jpg" alt="Portrait de Valéry Rafalinjanahary" class="about__img">
+          </div>
+        </div>
+
+        <div class="about__content reveal">
+          <p class="about__lead">
+            Je m'appelle Valéry Rafalinjanahary, professionnel du multimédia basé à Madagascar,
+            avec plus de 9 ans d'expérience en montage vidéo, cadrage et design graphique.
+            Spécialisé dans la production audiovisuelle TV, les tournages en conditions réelles
+            et en studio, ainsi que la création de contenus visuels.
+          </p>
+          <p class="about__text">
+            Rigoureux, polyvalent et orienté qualité, avec un fort sens de la narration visuelle
+            et une bonne capacité d'adaptation aux nouveaux formats digitaux. Une base autodidacte
+            complétée par une formation professionnelle en multimédia, mise en pratique au
+            quotidien sur des formats TV, corporate, événementiels et réseaux sociaux.
+          </p>
+
+          <ul class="about__tags">
+            <li>Montage vidéo</li>
+            <li>Cadrage</li>
+            <li>Design graphique</li>
+            <li>Photographie</li>
+            <li>Production TV</li>
+            <li>Freelance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- COMPÉTENCES -->
+  <!-- ============================================= -->
+  <section class="section" id="competences">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <div class="section__title-row">
+          <span class="section__bar"></span>
+          <h2 class="section__title">Compétences</h2>
+        </div>
+        <p class="section__sub">Les outils que j'utilise au quotidien, et les domaines où j'interviens.</p>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill-card glass reveal">
+          <div class="skill-card__top">
+            <span class="skill-card__name">Adobe Premiere Pro</span>
+            <span class="skill-card__level">Très bonne maîtrise</span>
+          </div>
+          <div class="skill-bar"><span class="skill-bar__fill" style="--level:95%"></span></div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-card__top">
+            <span class="skill-card__name">Adobe Photoshop</span>
+            <span class="skill-card__level">Bonne maîtrise</span>
+          </div>
+          <div class="skill-bar"><span class="skill-bar__fill" style="--level:75%"></span></div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-card__top">
+            <span class="skill-card__name">Adobe After Effects</span>
+            <span class="skill-card__level">Bonne base · motion design</span>
+          </div>
+          <div class="skill-bar"><span class="skill-bar__fill" style="--level:50%"></span></div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-card__top">
+            <span class="skill-card__name">Adobe Illustrator</span>
+            <span class="skill-card__level">Bonne base · identité visuelle</span>
+          </div>
+          <div class="skill-bar"><span class="skill-bar__fill" style="--level:50%"></span></div>
+        </div>
+      </div>
+
+      <div class="skills__chips reveal">
+        <span class="chip">Montage vidéo professionnel</span>
+        <span class="chip">Montage YouTube 16:9</span>
+        <span class="chip">Montage Short &amp; réel 9:16</span>
+        <span class="chip">Cadrage &amp; reportage terrain</span>
+        <span class="chip">Design graphique &amp; logos</span>
+        <span class="chip">Identité visuelle</span>
+        <span class="chip">Édition podcast</span>
+        <span class="chip">Photographie</span>
+        <span class="chip">Pilotage de drone</span>
+        <span class="chip">Narration visuelle</span>
+        <span class="chip">Gestion autonome de projets</span>
+        <span class="chip">Journalisme travail &amp; emploi (OIT)</span>
+      </div>
+
+      <div class="languages reveal">
+        <span class="languages__label">Langues</span>
+        <div class="languages__list">
+          <span class="lang-pill">Malagasy <em>langue maternelle</em></span>
+          <span class="lang-pill">Français <em>intermédiaire avancé</em></span>
+          <span class="lang-pill">Anglais <em>élémentaire</em></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FORMATION -->
+  <!-- ============================================= -->
+  <section class="section" id="formation">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <div class="section__title-row">
+          <span class="section__bar"></span>
+          <h2 class="section__title">Formation</h2>
+        </div>
+        <p class="section__sub">Un socle professionnel complété par la pratique du terrain.</p>
+      </div>
+
+      <div class="formation__grid">
+        <div class="formation-card glass reveal">
+          <span class="formation-card__school">E-Media — Ambatomitsangana</span>
+          <h3 class="formation-card__title">Formation professionnelle en multimédia</h3>
+        </div>
+        <div class="formation-card glass reveal">
+          <span class="formation-card__school">CSPJ — Tanjombato</span>
+          <h3 class="formation-card__title">Baccalauréat technique en Gestion (G2)</h3>
+        </div>
+        <div class="formation-card glass reveal">
+          <span class="formation-card__school">CSPJ — Tanjombato</span>
+          <h3 class="formation-card__title">Brevet d'Études Professionnelles (BEP)</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- EXPÉRIENCE -->
+  <!-- ============================================= -->
+  <section class="section" id="experience">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <div class="section__title-row">
+          <span class="section__bar"></span>
+          <h2 class="section__title">Expérience</h2>
+        </div>
+        <p class="section__sub">9 ans de terrain, du journal TV quotidien aux projets de marque.</p>
+      </div>
+
+      <!-- TIMELINE: ajoute de nouvelles étapes en dupliquant un .timeline__item -->
+      <div class="timeline">
+        <div class="timeline__line"></div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card glass">
+            <span class="timeline__year">Janvier 2017 — Mars 2026</span>
+            <h3 class="timeline__title">Monteur vidéo &amp; cadreur — Viva Madagascar</h3>
+            <p class="timeline__desc">
+              Montage quotidien de contenus vidéo à forte contrainte de délai (journal TV, sujets
+              spéciaux). Cadreur polyvalent sur reportages terrain, émissions en studio et
+              événements. Optimisation du workflow de montage pour garantir qualité et rapidité,
+              en collaboration avec journalistes, réalisateurs et équipes techniques.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card glass">
+            <span class="timeline__year">2024 — 2025</span>
+            <h3 class="timeline__title">Projets en design graphique — SESA</h3>
+            <p class="timeline__desc">
+              Création de supports visuels (logos, roll-ups, X-banners) et conception du logo
+              officiel du Secrétariat d'État chargé de la Souveraineté Alimentaire (SESA).
+              Conception et réalisation de vidéos courtes (Reels) pour la page officielle du SESA.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card glass">
+            <span class="timeline__year">Depuis Mars 2026</span>
+            <h3 class="timeline__title">Monteur vidéo — Viziocraft</h3>
+            <p class="timeline__desc">
+              Montage de contenus courts (Short, Reels) et édition de podcast (coupe,
+              synchronisation, amélioration audio). Adaptation des formats selon les plateformes
+              (Instagram, YouTube), en collaboration avec l'équipe et dans le respect des
+              demandes clients.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card glass">
+            <span class="timeline__year">Freelance &amp; collaborations</span>
+            <h3 class="timeline__title">Projets audiovisuels &amp; événementiels</h3>
+            <p class="timeline__desc">
+              Réalisation de vidéos événementielles (événements culturels, institutionnels et
+              privés) pour l'OIT. Prestations en tant que vidéaste et photographe : captation
+              photo/vidéo, interviews, aftermovies. Réalisation de mini-documentaires en
+              collaboration avec FIFATA.
+            </p>
+          </div>
+        </div>
+
+        <!-- Emplacement libre pour une future étape -->
+        <div class="timeline__item timeline__item--empty reveal">
+          <div class="timeline__dot timeline__dot--ghost"></div>
+          <div class="timeline__card glass timeline__card--ghost">
+            <span class="timeline__year">—</span>
+            <h3 class="timeline__title">Prochaine étape</h3>
+            <p class="timeline__desc">Emplacement prêt pour une nouvelle collaboration ou réalisation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- PORTFOLIO -->
+  <!-- ============================================= -->
+  <section class="section" id="portfolio">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <div class="section__title-row">
+          <span class="section__bar"></span>
+          <h2 class="section__title">Portfolio</h2>
+        </div>
+        <p class="section__sub">Une sélection de réalisations, du format long au format court.</p>
+      </div>
+
+      <!-- YOUTUBE VIDEOS -->
+      <div class="portfolio__grid">
+
+        <article class="video-card glass reveal" data-yt="NOnZecVxVtk">
+          <button class="video-card__thumb" aria-label="Lire le mini-documentaire">
+            <img src="https://i.ytimg.com/vi/NOnZecVxVtk/hqdefault.jpg" alt="Miniature du mini-documentaire" loading="lazy">
+            <span class="video-card__play">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+          </button>
+          <div class="video-card__body">
+            <span class="video-card__tag">Mini-documentaire</span>
+            <h3 class="video-card__title">Mini-documentaire</h3>
+          </div>
+        </article>
+
+        <article class="video-card glass reveal" data-yt="Jzu6-cjI1Ac">
+          <button class="video-card__thumb" aria-label="Lire le format long">
+            <img src="https://i.ytimg.com/vi/Jzu6-cjI1Ac/hqdefault.jpg" alt="Miniature du format long" loading="lazy">
+            <span class="video-card__play">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+          </button>
+          <div class="video-card__body">
+            <span class="video-card__tag">Long format</span>
+            <h3 class="video-card__title">Long format</h3>
+          </div>
+        </article>
+
+        <article class="video-card glass reveal" data-yt="spKAHn1ezqQ">
+          <button class="video-card__thumb" aria-label="Lire le vlog">
+            <img src="https://i.ytimg.com/vi/spKAHn1ezqQ/hqdefault.jpg" alt="Miniature du vlog" loading="lazy">
+            <span class="video-card__play">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+          </button>
+          <div class="video-card__body">
+            <span class="video-card__tag">Vlog</span>
+            <h3 class="video-card__title">Vlog</h3>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- REELS / SHORT FORM -->
+      <div class="portfolio__reels-head reveal">
+        <h3 class="portfolio__reels-title">Reels / Short Form</h3>
+        <span class="portfolio__reels-note">Formats courts actuellement en phase de test</span>
+      </div>
+
+      <div class="reels__grid">
+        <!-- REELS: remplace href par un nouveau lien Google Drive pour mettre à jour -->
+        <a class="reel-card glass reveal"
+           href="https://drive.google.com/file/d/1f6EDuW_ZC9XTXll40YE8tvwClHGss817/view?usp=drive_link"
+           target="_blank" rel="noopener">
+          <div class="reel-card__frame">
+            <span class="reel-card__play">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+          </div>
+          <div class="reel-card__body">
+            <span class="video-card__tag">Reels / Short Form</span>
+            <h4 class="reel-card__title">Format court 01</h4>
+            <span class="reel-card__link">Voir la vidéo sur Google Drive →</span>
+          </div>
+        </a>
+
+        <a class="reel-card glass reveal"
+           href="https://drive.google.com/file/d/10hYG2A4yL3ZzrIPgRQEmxWikC2dIQUkC/view?usp=drive_link"
+           target="_blank" rel="noopener">
+          <div class="reel-card__frame">
+            <span class="reel-card__play">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+          </div>
+          <div class="reel-card__body">
+            <span class="video-card__tag">Reels / Short Form</span>
+            <h4 class="reel-card__title">Format court 02</h4>
+            <span class="reel-card__link">Voir la vidéo sur Google Drive →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- CONTACT -->
+  <!-- ============================================= -->
+  <section class="section" id="contact">
+    <div class="section__inner contact">
+      <div class="section__head reveal">
+        <div class="section__title-row">
+          <span class="section__bar"></span>
+          <h2 class="section__title">Contact</h2>
+        </div>
+        <p class="section__sub">Un projet en tête ? Discutons-en.</p>
+      </div>
+
+      <div class="contact__grid">
+        <!-- CONTACT -->
+        <a href="mailto:rafalinjanahary@gmail.com" class="contact-card glass reveal">
+          <span class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+          </span>
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value">rafalinjanahary@gmail.com</span>
+        </a>
+
+        <a href="https://wa.me/261385903428" target="_blank" rel="noopener" class="contact-card glass reveal">
+          <span class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.6 14.3c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5.3.7.9 2.3 1 2.5.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.5.6c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.2 2.4 1.5 2.8 1.7.3.2.5.1.7-.1l.9-1c.2-.3.5-.2.8-.1.3.1 2 .9 2.3 1.1.3.2.5.3.6.4.1.2.1.9-.1 1.6z"/></svg>
+          </span>
+          <span class="contact-card__label">WhatsApp</span>
+          <span class="contact-card__value">+261 38 59 034 28</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/hasina-rafalinjnahary-64a10b1b3/" target="_blank" rel="noopener" class="contact-card glass reveal">
+          <span class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.95-8.68-2.91V8.48z"/></svg>
+          </span>
+          <span class="contact-card__label">LinkedIn</span>
+          <span class="contact-card__value">Valéry Rafalinjanahary</span>
+        </a>
+
+        <a href="https://web.facebook.com/hasina.rafalinjanahary/directory_contact_info/" target="_blank" rel="noopener" class="contact-card glass reveal">
+          <span class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14 9V6.5c0-.8.5-1 .9-1H17V2h-2.9C11.7 2 11 4 11 5.7V9H8v3.5h3V22h3v-9.5h2.4l.6-3.5H14z"/></svg>
+          </span>
+          <span class="contact-card__label">Facebook</span>
+          <span class="contact-card__value">hasina.rafalinjanahary</span>
+        </a>
+
+        <a href="https://www.instagram.com/hasina_rfj/" target="_blank" rel="noopener" class="contact-card glass reveal">
+          <span class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </span>
+          <span class="contact-card__label">Instagram</span>
+          <span class="contact-card__value">@hasina_rfj</span>
+        </a>
+
+        <div class="contact-card contact-card--static glass reveal">
+          <span class="contact-card__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          </span>
+          <span class="contact-card__label">Localisation</span>
+          <span class="contact-card__value">Antananarivo, Madagascar</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================= -->
+<!-- FOOTER -->
+<!-- ============================================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <img src="assets/images/logo.png" alt="Logo VR" class="footer__mark">
+    <p class="footer__text">Valéry Rafalinjanahary — Monteur vidéo · Cadreur · Photographe</p>
+    <p class="footer__copy">© <span id="year"></span> — Des images qui racontent votre histoire.</p>
+  </div>
+</footer>
+
+<!-- ============================================= -->
+<!-- QUICK CONTACT — bouton flottant Email / WhatsApp -->
+<!-- ============================================= -->
+<div class="quick-contact" id="quickContact">
+  <div class="quick-contact__menu" id="quickContactMenu">
+    <a href="https://wa.me/261385903428?text=Bonjour%20Val%C3%A9ry%2C%20je%20vous%20contacte%20depuis%20votre%20portfolio."
+       target="_blank" rel="noopener" class="quick-contact__item glass" aria-label="Écrire sur WhatsApp">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.6 14.3c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5.3.7.9 2.3 1 2.5.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.5.6c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.2 2.4 1.5 2.8 1.7.3.2.5.1.7-.1l.9-1c.2-.3.5-.2.8-.1.3.1 2 .9 2.3 1.1.3.2.5.3.6.4.1.2.1.9-.1 1.6z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="mailto:rafalinjanahary@gmail.com" class="quick-contact__item glass" aria-label="Écrire un email">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+      <span>Email</span>
+    </a>
+  </div>
+  <button class="quick-contact__toggle glass" id="quickContactToggle" aria-label="Ouvrir les options de contact rapide" aria-expanded="false">
+    <svg class="quick-contact__icon-msg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    <svg class="quick-contact__icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+</div>
+
+<!-- ============================================= -->
+<!-- VIDEO MODAL -->
+<!-- ============================================= -->
+<div class="modal" id="videoModal" aria-hidden="true">
+  <div class="modal__backdrop" id="modalBackdrop"></div>
+  <div class="modal__panel glass">
+    <button class="modal__close" id="modalClose" aria-label="Fermer la vidéo">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal__video">
+      <iframe id="modalIframe" src="" title="Lecteur vidéo" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
